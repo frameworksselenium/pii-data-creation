@@ -20,7 +20,9 @@ def get_secret():
         aws_access_key_id='AKIA3PLF4DOAXDKWX5U7',
         aws_secret_access_key='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'
     )
-
+    # reading from environment variables
+    #aws_access_key_id = os.environ['aws_access_key_id'],
+    #aws_secret_access_key = os.environ['aws_secret_access_key']
     try:
         get_secret_value_response = client.get_secret_value(
             SecretId=secret_name

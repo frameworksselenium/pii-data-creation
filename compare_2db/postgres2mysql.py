@@ -35,10 +35,10 @@ def fetch_mysql_data():
 
 # Fetch data from PostgreSQL
 postgresql_df = fetch_postgresql_data()
-
+print(postgresql_df)
 # Fetch data from MySQL
 mysql_df = fetch_mysql_data()
-
+print(mysql_df)
 # Compare data
 comparison_result = postgresql_df.compare(mysql_df)
 print("Differences between PostgreSQL and MySQL data:")
